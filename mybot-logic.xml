@@ -1,0 +1,102 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category><pattern> WHICH MAMMAL HAS THE MOST POWERFUL BITE IN THE WORLD </pattern>
+  <template>Hippopotamus</template></category>
+
+<category><pattern> WHO IS THE WORLD'S FASTEST LAND ANIMAL? </pattern>
+  <template>Cheetah</template></category>
+
+<category><pattern> WHAT COLOR IS OCTOPUS BLOOD</pattern>
+  <template>Blue</template></category>
+
+<category><pattern> WHICH INSECT CAUSES MALARIA</pattern>
+  <template>Mosquito</template></category>
+
+<category><pattern> HOW MANY BONES DOES A SHARK HAVE? </pattern>
+  <template>0</template></category>
+
+<category><pattern> WHAT ANIMAL IS KNOWN TO BE MAN'S BEST FRIEND </pattern>
+  <template>Dog</template></category>
+
+<category><pattern> WHAT DO YOU KNOW </pattern>
+  <template>#30$<star index="1"/></template></category>
+
+<category><pattern> GUESS WHICH ANIMAL I AM THINKING OF </pattern>
+  <template>#29$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS THE SIZE OF KANGAROO BABIES WHEN THEY ARE BORN </pattern>
+  <template>1 inch</template></category>
+
+<category><pattern> WHICH ANIMAL HAS THE LONGEST LIFESPAN </pattern>
+  <template>Arctic whale</template></category>
+
+<category><pattern> BLACK CATS ARE KNOWN FOR WHAT SUPERSTITIOUS BELIEF </pattern>
+  <template>Bad luck</template></category>
+
+<category><pattern> WHICH ANIMAL IS THE TALLEST </pattern>
+  <template>Giraffe</template></category>
+
+
+<category><pattern> CAN YOU DETECT MY FACE ON CAMERA </pattern>
+  <template>#33$<star index="1"/></template></category>   
+
+<category><pattern> WHAT ARE THE OBJECTS IN THIS PICTURE</pattern>
+  <template>#34$<star index="1"/></template></category>
+
+<category><pattern> WHAT ANIMAL IS IN THIS IMAGE</pattern>
+  <template>#35$<star index="1"/></template></category>
+
+<category><pattern> CAN YOU SHOW AN IMAGE OF THE ANIMAL</pattern>
+  <template>#36$<star index="1"/></template></category>
+
+<!-- Logic input -->
+<category><pattern> I KNOW THAT * IS *</pattern>
+  <template>#31$<star index="1"/> is <star index="2"/> </template></category>  
+
+<category><pattern> CHECK THAT * IS *</pattern>
+  <template>#32$<star index="1"/> is <star index="2"/> </template></category>  
+
+
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>
